@@ -6,6 +6,7 @@ Y =[]
 A =[]
 B =[]
 C =[]
+
 mean =0.0
 variance = 0.0
 deviation = 0.0
@@ -14,6 +15,7 @@ xPx = lambda a, b: a * b
 x2px = lambda a, b: (a**2) * b
 loops = 0
 miterated = int(input("maxnum:"))
+
 while loops < miterated:
     X.append(float(input("X input:")))
     Y.append(float(input("P(X) input:")))
@@ -28,6 +30,8 @@ while loops < miterated:
     loops+=1
 deviation =math.sqrt(variance)
 loops = 0
+
+#table printing
 print(f'X || P(X) || X P(X) ||X^2 || X^2 P(X)')
 while loops < miterated:
     print(f'{X[loops]} ||{Y[loops]} ||{A[loops]} || {B[loops]} || {C[loops]} || ')
